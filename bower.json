@@ -2,7 +2,8 @@
   "name": "nes",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "responsive-tabs": "^1.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

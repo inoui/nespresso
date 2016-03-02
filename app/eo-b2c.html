@@ -11,27 +11,141 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link type="text/css" rel="stylesheet" href="/bower_components/responsive-tabs/css/responsive-tabs.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="https://www.nespresso.com/mosaic/_ui/generated/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
   </head>
   <body>
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="/eo-b2c.html">Easy Ordering B2C</a></li>
-        <li><a href="/eo-b2b.html">Easy Ordering B2B</a></li>
-      </ul>
+    <div class="easy-ordering-c container-b2c">
+      <section class="eo-description">
+        <h1><span><img src="images/service-logo-b2c.png" alt="Easy Ordering" /></span> save time and never<br> run out of your <i>Nespresso</i> grands crus</h1>
+        <img class="desc-img-desk" src="images/easy-ordering-desc.png" alt="Easy Ordering" />
+        <img class="desc-img-mob" src="images/easy-ordering-desc.png" alt="Easy Ordering" />
+        <p><i>Nespresso</i> Easy Ordering is a new service that will allow you to set up automatic and recurring orders to receive your Grands Crus at the frequency and date of your choice. Do not miss out anymore on your favourite <i>Nespresso</i> coffee moments and set up your easyorder today, with no commitment.</p>
+        <button>START HERE!</button>
+
+      </section>
+      <section class="eo-benefits">
+        <h2><i>Nespresso</i> Easy Ordering benefits</h2>
+        <ul>
+          <li class="deliver">
+            <h3>Enjoy free delivery</h3>
+            <p>Upon signing up, benefit from free delivery for all your Easy Orders.</p>
+          </li>
+          <li class="ship">
+            <h3>automatic & recurring shipment</h3>
+            <p>Receive your order at the frequency and address of ypur choice. 3 days prior to the shipment of your Easy Order, you will receive an email with your order details.</p>
+          </li>
+          <li class="edit">
+            <h3>modify or cancel it at any time</h3>
+            <p>Modify your recurring order until midnight before the day of shipment. There is no commitment, you can cancel your order at any time and free of charge.</p>
+          </li>
+          <li class="manage">
+            <h3>easy to manage</h3>
+            <p>Create or manage your order 24/7 online under My Account, by calling our Coffee Specialist at 0800-442-442 or by visiting any of our <i>Nespresso</i> Boutiques. <a href="#"><i class="fa fa-long-arrow-right"></i> Store locator</a></p>
+          </li>
+        </ul>
+
+      </section>
+      <section class="eo-howitworks">
+      <hr>
+      <h2>How does Easy Ordering work?</h2>
+      <div id="responsiveTabsDemo">
+        <ul>
+            <li><a href="#tab-1">
+              <img src="images/tab-number-1.png" alt="1" />
+              <span class="subhead"><span class="subnumber">1.</span> Select</span>
+              <span class="subdesc">your products or easily copy<br> one of your past orders</span>
+            </a></li><li class="middle">
+            <a href="#tab-2">
+              <img src="images/tab-number-2.png" alt="2" />
+              <span class="subhead"><span class="subnumber">2.</span> Define</span>
+              <span class="subdesc">frequency, starting date,<br> delivery and payment methods</span> 
+            </a></li><li>
+            <a href="#tab-3">
+                <img src="images/tab-number-3.png" alt="3" />
+                <span class="subhead"><span class="subnumber">3.</span> Receive</span>
+                <span class="subdesc">your order at the frequency<br> selected. Enjoy!</span> 
+            </a></li>
+        </ul>
+        <div id="tab-1" class="item">
+              <img src="images/step1-b2c.png" alt="step 1" />
+              <h3>Start by selecting your products</h3>
+              <p>Select one of your past orders in your order history (upon products<br> availability) and click on "Make this order recurrent". You can still add or delete products, as well as modify desired quantities at this step.<br><br>
+              Or, within your account, access the menu "My Easy Orders" to create a new Easy Order from scratch. You will be able to select all of your <i>Nespresso</i> Grands Crus, and a selected range of accessories and sweets.
+              </p>
+        </div>
+        <div id="tab-2" class="item">
+          <img src="images/step2-b2c-b2b.png" alt="step 2" />
+              <h3>Now define the frequency at which you would like to receive your orders</h3>
+              <p>At this step, you will select a pre-defined frequency and the starting date of your Easyorder. To help you, <i>Nespresso</i> can suggest a rcommended frequency based on the contents of your order.</p>
+              <h3>Then define your delivery address along with the delivery and payment methods</h3>
+              <p>You can setup your regular delivery address and payment details.</p>
+              <h3>Easy to change according to your needs</h3>
+              <p>Your frequency as well as your next shipment date, delievry address or payment methods can be modified at any time up to the day before shipment. For instance, during your holidays, you could ship your Easyorder to your vacation address (if within the same country) or simply postpone it.</p>
+        </div>
+        <div id="tab-3" class="item">
+          <img src="images/step3-b2c.png" alt="step 3" />
+              <h3>Receive your order with no extra effort</h3>
+              <p>Based on your defined frequency, you will receive automatically your order at home or your desired address.<br><br>
+              If you find yourself running out of coffee or with too much stock at home, you can easily adjust your next shipment date. If needed, you can create more than one Easyorder and simply manage them individually.<br><br>
+              Ordering you <i>Nespresso</i> Grands Crus has never been easier!</p>
+        </div>
+      </div>
+      <div class="tabs-nav">
+        <div class="tabs-prev"><i class="fa fa-chevron-left"></i></div>
+        <div class="tabs-next"><i class="fa fa-chevron-right"></i></div>
+      </div>
+      </section>
+      <section class="eo-starttoday">
+        <h2>Start your Easy Ordering today</h2>
+        <button>Create from a past order</button> <span class="spanor">or</span> <button>Create from scratch</button>
+      </section>
+      <section class="eo-faq">
+        <h2>FAQ</h2>
+        <dl class="faq-dl">
+          <dt>Are there any hidden fees for signing up for the Standing Order service?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>What are my obligations for signing up for the Standing Order service?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>How do I modify or cancel a Standing Order?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>If I am away or on holidays, how do I postpone my Standing Order?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>I have an OPERATING machine contract, how do I create, modify or cancel a Standing order?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>I have an OPERATING machine contract and I am not able to decrease online the quantities of Grands Crus of my Standing Order</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>I want to pay my Standing Order by invoices, how do I add or modify a PURCHASE ORDER number?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>How do I create and manage multiple Standing Orders?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>Why are some of my usual delivery methods missing when I set up a Standing order?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>How will I know when my order will ship?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>What are the shipping fees for an Standing Order?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>Do I benefit from promotional activities by signing up for the Standing Order service?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          <dt>What happens if a product of my Standing Order becomes out of stock?</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+        </dl>
+        <a href="#"><i class="fa fa-long-arrow-right"></i> Do you have any other questions?</a>
+      </section>
     </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/responsive-tabs/js/jquery.responsiveTabs.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
