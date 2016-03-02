@@ -1,6 +1,6 @@
 // bower:scss
 // endbower
-
+ 
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -86,7 +86,7 @@
     }
 
     @media (max-width: 667px) {
-      padding:15px 20px 40px!important;
+      padding:15px 30px 40px;
       text-align: center;
       &>img{
         max-width: 100%;
@@ -181,9 +181,11 @@
         margin: 0 40px 40px;
       }
       ul{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 10px;
         li{
           width: 70%;
+          margin-right: 0;
+          padding-left: 90px;
           p{
             color: #fff;
             a{
@@ -255,7 +257,7 @@
         display: block;
         &.subhead{
           text-transform: uppercase;
-          font-size: 1.2em;
+          font-size: 1.1em;
           margin-top: 20px;
           font-weight: bold;
           margin-bottom:10px;
@@ -263,7 +265,7 @@
         }
         &.subdesc{
           color:#222222!important;
-          font-size: 1.2em;
+          font-size: 1em;
           line-height: 1.4em;
           br{
             display: none;
@@ -395,13 +397,13 @@
       .spanor{
         text-transform: uppercase;
         color: #fff;
-        &:before, 
+        &:before,
         &:after{
           content: "\2014";
           padding: 0 10px;
         }
       }
-    } 
+    }
   }
   .eo-faq{
     border-top:1px solid #d7d7d7;
@@ -447,8 +449,7 @@
     @media (max-width: 667px) {
       margin: 0 30px;
       padding:60px 0;
-    }    
+    }
   }
 
 }
-
