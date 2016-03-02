@@ -1,6 +1,6 @@
 // bower:scss
 // endbower
-
+ 
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -393,13 +393,13 @@
       .spanor{
         text-transform: uppercase;
         color: #fff;
-        &:before, 
+        &:before,
         &:after{
           content: "\2014";
           padding: 0 10px;
         }
       }
-    } 
+    }
   }
   .eo-faq{
     border-top:1px solid #d7d7d7;
@@ -445,8 +445,7 @@
     @media (max-width: 667px) {
       margin: 0 30px;
       padding:60px 0;
-    }    
+    }
   }
 
 }
-
