@@ -43,6 +43,11 @@
     }
     @media (max-width: 667px) {
       max-width: 100%;
+      .eo-description{
+        &>img{
+          right:auto;
+        }
+      }
     }
   }
   &.container-b2c{
