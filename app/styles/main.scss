@@ -215,7 +215,7 @@
     }
     .tabs-nav{
       position:absolute;
-      top:420px;
+      top:480px;
       width: 100%;
       .tabs-prev,
       .tabs-next{
@@ -348,8 +348,23 @@
     .item{
       background-color:#fff;
       color: #5c5c5c;
-      min-height: 415px;
+      min-height: 450px;
       padding:50px 80px 40px;
+      &#tab-1,
+      &#tab-3{
+        padding-top:120px;
+        min-height: 380px;
+        h3{
+          margin-top: 70px;
+        }
+        @media (max-width: 667px) {
+          padding-top:40px;
+          min-height: auto;
+          h3{
+            margin-top: 20px;
+          }
+        }
+      }
       img{
         float: left;
         margin-right: 60px;
@@ -370,8 +385,8 @@
         padding:40px;
         img{
           float: none;
-          margin-right: 0;
-          margin-bottom: 20px;
+          margin: 0 auto 20px;
+          display: block;
           max-width: 100%;
         }
       }
