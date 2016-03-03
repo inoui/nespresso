@@ -59,9 +59,19 @@
     @media (max-width: 769px) {
       max-width: 100%;
       .eo-description{
-        &>img{
-          right:20px;
+      &>img{
+        max-width: 100%;
+        position:relative;
+        top:auto;
+        right:auto;
+        &.desc-img-desk{
+         display: none;
         }
+        &.desc-img-mob{
+          display: block;
+          margin: -20px auto;
+        }
+      }
       }
     }
   }
@@ -86,7 +96,7 @@
       line-height: 1.3em;
       text-transform: uppercase;
       color: #000;
-      width: 55%;
+      width: 60%;
       z-index: 1;
       position:relative;
       span{
@@ -98,7 +108,7 @@
       }
     }
     p{
-      width: 55%;
+      width: 53%;
       z-index: 1;
       position:relative;
       font-size: 1.4em;
@@ -111,6 +121,8 @@
       &>img{
         max-width: 100%;
         position:relative;
+        top:auto;
+        right:auto;
         &.desc-img-desk{
          display: none;
         }
@@ -124,7 +136,7 @@
         line-height: 1.3em;
         text-transform: uppercase;
         color: #000;
-        width: 90%;
+        width: 100%;
         z-index: 1;
         position:relative;
         span{
