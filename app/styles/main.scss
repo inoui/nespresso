@@ -37,11 +37,19 @@
   &.container-b2b{
     max-width: 996px;
     .eo-description{
+    .mob-show{
+      display: none;
+      @media (max-width: 769px) {display:block;margin:20px auto;}
+    }
+    .mob-hide{
+      display: block;
+      @media (max-width: 769px) {display:none;}
+    }
       &>img{
         right:-44px;
       }
     }
-    @media (max-width: 667px) {
+    @media (max-width: 769px) {
       max-width: 100%;
       .eo-description{
         &>img{
@@ -90,7 +98,7 @@
       line-height: 1.5em;
     }
 
-    @media (max-width: 667px) {
+    @media (max-width: 769px) {
       padding:15px 30px 40px;
       text-align: center;
       &>img{
@@ -101,7 +109,7 @@
         }
         &.desc-img-mob{
           display: block;
-          margin: -20px 0;
+          margin: -20px auto;
         }
       }
       h1{
@@ -180,7 +188,7 @@
         }
       }
     }
-    @media (max-width: 667px) {
+    @media (max-width: 769px) {
       h2{
         font-size: 2em;
         line-height: 1.2em;
@@ -205,6 +213,10 @@
   .eo-howitworks{
     background-color:#222222;
     position:relative;
+    .mob-only{
+      display: none;
+      @media (max-width: 769px) {display:block;}
+    }
     hr{
       width:92%;
       margin:0 auto 50px;
@@ -241,7 +253,7 @@
         top:0;
         right:-25px;
       }
-      @media (max-width: 667px) {display:none;}
+      @media (max-width: 769px) {display:none;}
     }
     .r-tabs-nav li{
       padding:0;
@@ -255,6 +267,16 @@
       border-top:1px solid #d9d9d9;
       a{
         text-decoration: none;
+        &:before{
+        font-family: "FontAwesome";
+        position:absolute;
+        top:25px;
+        left:22px;
+        content: "\f055";
+        margin-right:5px;
+        font-size: 2.2em;
+        color:#000;
+        }
       }
       img{
         display: none;
@@ -282,20 +304,13 @@
           color:#cc9d49;
         }
       }
-      &:before{
-        font-family: "FontAwesome";
-        position:absolute;
-        top:25px;
-        left:22px;
-        content: "\f055";
-        margin-right:5px;
-        font-size: 2.2em;
-        color:#000;
-      }
+
       &.r-tabs-state-active{
+        a{
           &:before{
             content: "\f056";
           }
+        }
       }
     }
     .r-tabs-tab{
@@ -357,7 +372,7 @@
         h3{
           margin-top: 70px;
         }
-        @media (max-width: 667px) {
+        @media (max-width: 769px) {
           padding-top:40px;
           min-height: auto;
           h3{
@@ -380,7 +395,7 @@
         font-size: 1.2em;
         line-height: 1.4em;
       }
-      @media (max-width: 667px) {
+      @media (max-width: 769px) {
         background:#eee url("../images/accourdion-arrow.png") center top no-repeat;
         padding:40px;
         img{
@@ -405,7 +420,7 @@
       font-weight: normal;
       margin-bottom: 30px;
     }
-    @media (max-width: 667px) {
+    @media (max-width: 769px) {
       background: #000;
       text-align: center;
       h2{
@@ -468,7 +483,7 @@
         padding:10px;
       }
     }
-    @media (max-width: 667px) {
+    @media (max-width: 769px) {
       margin: 0 30px;
       padding:60px 0;
     }
