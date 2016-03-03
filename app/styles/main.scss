@@ -33,18 +33,25 @@
     padding:0 15px;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    &.mob-show{
+      display: none;
+    }
+    &.mob-hide{
+      display: block;
+    }
+    @media (max-width: 769px) {
+      &.mob-show{
+        display: block;
+        margin: 20px auto;
+      }
+      &.mob-hide{
+        display: none;
+      }
+    }
   }
   &.container-b2b{
     max-width: 996px;
     .eo-description{
-    .mob-show{
-      display: none;
-      @media (max-width: 769px) {display:block;margin:20px auto;}
-    }
-    .mob-hide{
-      display: block;
-      @media (max-width: 769px) {display:none;}
-    }
       &>img{
         right:-44px;
       }
@@ -53,7 +60,7 @@
       max-width: 100%;
       .eo-description{
         &>img{
-          right:auto;
+          right:20px;
         }
       }
     }
