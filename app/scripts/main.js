@@ -7,9 +7,9 @@
 
 		if($('#responsiveTabsDemo').length > 0){
 			$('#responsiveTabsDemo').responsiveTabs({
-				setHash: true,
-				active: 0
+				setHash: true
 			});
+			window.location.hash = '#ttab-1';
 		}
 
 		function onDtclick (e) {
