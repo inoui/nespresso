@@ -3,7 +3,7 @@
 	/* trigger when page is ready */
 	$(document).ready(function (){
 		// onload stuff
-		console.log('ready!');
+		//console.log('ready!');
 
 		if($('#responsiveTabsDemo').length > 0){
 			$('#responsiveTabsDemo').responsiveTabs({
