@@ -3,14 +3,10 @@
 	/* trigger when page is ready */
 	$(document).ready(function (){
 		// onload stuff
-		//console.log('ready!');
 
-		if($('#responsiveTabsDemo').length > 0){
-			$('#responsiveTabsDemo').responsiveTabs({
-				setHash: true
-			});
-			window.location.hash = '#ttab-1';
-		}
+        $('#responsiveTabsDemo').responsiveTabs({
+			setHash: true
+		});
 
 		function onDtclick (e) {
 			var $dt = $(e.target)
@@ -20,24 +16,19 @@
 			$dd.toggle();
 		}
 		function onPrevclick () {
-			var $hash = window.location.hash;
-			var $activetab = $hash.replace( /^\D+/g, '');
-
-			if($activetab > 1){
-				var $newhash = '#tab-' + ($activetab - 1);
-				window.location.hash = $newhash;
-			}
+            var curr = $('#responsiveTabsDemo li.r-tabs-state-active').index();
+            if (curr > 0) {
+                $('#responsiveTabsDemo').responsiveTabs('activate', --curr);
+            }
 		}
 
 		function onNextclick () {
-			var $hash = window.location.hash;
-			var $activetab = parseInt($hash.replace( /^\D+/g, ''), 10);
-
-			if($activetab < 3){
-				var $newhash = '#tab-' + ($activetab + 1);
-				window.location.hash = $newhash;
-			}
+            var curr = $('#responsiveTabsDemo li.r-tabs-state-active').index();
+            if (curr < 2) {
+                $('#responsiveTabsDemo').responsiveTabs('activate', ++curr);
+            }
 		}
+
 		// events below
 		$('.faq-dl dt').on('click', $.proxy(onDtclick, this));
 		$('.tabs-prev').on('click', $.proxy(onPrevclick, this));
