@@ -16,7 +16,13 @@
     letter-spacing: -1px;
   }
 }
-
+body{
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 75%;
+  color: #5c5c5c;
+  @media (max-width: 769px) {min-width:0!important;}
+}
 
 .easy-ordering-c{
   margin: 0 auto;
@@ -50,10 +56,16 @@
     }
   }
   &.container-b2b{
-    max-width: 996px;
+    max-width: 918px;
     .eo-description{
       &>img{
         right:-44px;
+      }
+    }
+    .eo-benefits{
+      ul{
+        margin: 0 0 0 30px;
+        @media (max-width: 769px) {margin: 0 0 0 10px;}
       }
     }
     @media (max-width: 769px) {
@@ -355,6 +367,7 @@
           margin-top: 33px;
           font-weight: bold;
           margin-bottom:10px;
+          color:#cc9d49;
         }
         &.subdesc{
           color:#222222!important;
@@ -475,6 +488,7 @@
       margin-left: 20px;
       display: block;
       color: #000;
+      text-decoration: underline;
       i{
         color:#cc9d49;
       }
@@ -483,6 +497,7 @@
       dt{
         font-size: 1.2em;
         line-height: 1.6em;
+        font-weight: normal;
         cursor: pointer;
         &:before{
           font-family: "FontAwesome";
